@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richard Huynh - Technical Portfolio</title>
+    <link rel = "stylesheet" href = "style.css" id = "theme-link">
+</head> 
+<body>
+    <header>
+        <div class = "logo-title">
+            <div class = "logo">
+                <img src = "images/initials.png" alt = "Logo">
+            </div>
+            <h1><a href = "index.html">Richard Huynh</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "aboutme.html">About Me</a></li>
+                <li><a href = "technical.html">Technical Portfolio</a></li>
+                <li><a href = "qualifications.html">Qualifications</a></li>
+                <li><a href = "service.html">Service</a></li>
+                <li><a href = "ai-generated.html">AI Content</a></li>
+            </ul>
+        </nav>
+        <button id = "toggle-style" style = "background: none; border: none; cursor: pointer;">
+            <img src = "images/button.png" alt = "Toggle Style" style = "width: 30px; height: 30px;">
+        </button>
+    </header>
+
+    <div class = "technical-container">
+        <div class = "project-container">
+            <div class = "project-text">
+                <h2><a href = "https://www.livenation.com/ticketmaster/">Tickets Classification</h2></a>
+                <p>A Ticketmasters data analytics project using Spark, Python, and Pandas in databricks, where events were classified into sizes and ticket prices were determined to be correctly priced or not.   </p>
+                <!-- <a href = "https://www.livenation.com/ticketmaster/">Live Nations Website</a> -->
+            </div>
+            <div class="tickets-image">
+                <a href = "https://www.livenation.com/ticketmaster/"><img src="images/ticketmasterPic.avif" alt="Project 1"></a>
+            </div>
+        </div>
+        <div class = "project-container"> 
+            <div class = "project-text">
+                <h2><a href = "https://github.com/rhuynh0/TechStockPricesModelingProject">Stock Prediction</h2></a>
+                <p>A data science project using regression models and a neural networks LSTM model to measure errors between predicted and actual stock prices. Numpy, Pandas, and Seaborn were used during data collection and preprocessing.  </p>
+            </div>
+            <div class = "stock-image">
+                <a href = "https://github.com/rhuynh0/TechStockPricesModelingProject"><img src="images/stockpic.jpg" alt="Project 2"></a>
+            </div>
+        </div>
+        <div class = "project-container"> 
+            <div class = "project-text">
+                <h2><a href = "https://docs.google.com/presentation/d/1TjrEo8tGIXxjX9wTc-5iWQ6GWFUs0HHAUtg0yIYNbx8/edit?usp=sharing">GM Electric Vehicles</h2></a>
+                <p>A data exploratory project researching factors affecting the purchasing power of electric vehicles, using SkLearn, NumPy, Pandas, MatPlotLibs, and Seaborn. Developed in correspondence to General Motor's "zero-zero-zero" campaign.  </p>
+            </div>
+            <div class = "ev-image">
+                <a href = "https://docs.google.com/presentation/d/1TjrEo8tGIXxjX9wTc-5iWQ6GWFUs0HHAUtg0yIYNbx8/edit?usp=sharing"><img src="images/gmevpic.jpg" alt="Project 3"></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

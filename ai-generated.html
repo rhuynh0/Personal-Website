@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richard Huynh - AI Content</title>
+    <style>
+        body {
+            background-color: rgba(123, 162, 204, 0.9);
+            font-family: 'Baskerville', serif;
+            line-height: 1.6;
+            color: #333;
+            padding: 20px;
+        }
+
+        /* Logo and Title Container */
+        .logo-title {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-title h1 a {
+            text-decoration: none;
+            color: inherit; 
+        }
+
+        /* Logo Styling */
+        .logo {
+            width: 50px;
+            height: 50px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+            overflow: hidden;
+            border: 2px solid black;
+            margin-right: 15px;
+        }
+
+        .logo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Conte Script Plus', cursive;
+            align-items: center;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            position: relative; 
+        }
+
+        /* Black Separator Bar Below Header */
+        header::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 3px; 
+            background-color: rgb(0, 0, 0);
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+
+        /* Header Title Styling */
+        header h1 {
+            font-size: 1.5em;
+            color: rgb(0, 0, 0);
+            margin: 0;
+            white-space: nowrap;
+        }
+
+        /* Navigation Bar Styling */
+        header nav {
+            margin-left: auto;
+            display: flex;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+            align-items: center;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        
+        .brain-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .brain-image {
+            width: 80%;
+            max-width: auto;
+            height: auto;
+            display: block;
+        }
+
+        .neuron {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 0, 0.7);
+            box-shadow: 0 0 15px rgba(255, 255, 0, 0.7);
+            cursor: pointer;
+        }
+
+        #tooltip {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: none;
+            z-index: 10;
+            font-size: 14px;
+        }
+
+        .prompt-box {
+            margin-top: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .prompt-box h3 {
+            color: #000;
+        }
+
+        textarea {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            border: 1px solid #000000;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class = "logo-title">
+            <div class = "logo">
+                <img src = "images/initials.png" alt = "Logo">
+            </div>
+            <h1><a href = "index.html">Richard Huynh</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "aboutme.html">About Me</a></li>
+                <li><a href = "technical.html">Technical Portfolio</a></li>
+                <li><a href = "qualifications.html">Qualifications</a></li>
+                <li><a href = "service.html">Service</a></li>
+                <li><a href = "ai-generated.html">AI Content</a></li>
+            </ul>
+        </nav>
+        <button id = "toggle-style" style = "background: none; border: none; cursor: pointer;">
+            <img src = "images/button.png" alt = "Toggle Style" style = "width: 30px; height: 30px;">
+        </button>
+    </header>
+
+    <section id="ai-content" class="container">
+        <div class="brain-container">
+            <img src="images/brain.jpg" alt="Brain" class="brain-image">
+            <div class="neuron" style="top: 32.7%; left: 54.5%;" data-fact="Machine Learning is a field of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed. It relies on algorithms and statistical models to analyze and draw inferences from patterns in data. Machine learning has applications in various domains, including healthcare for predictive diagnostics, finance for fraud detection, and in self-driving cars for real-time decision-making."></div> 
+        
+            <div class="neuron" style="top: 31%; left: 61%;" data-fact="Neuroscience explores the structure and function of the nervous system, with a particular focus on the brain. It combines aspects of biology, chemistry, psychology, and physics to understand how the brain processes information, controls behavior, and maintains various bodily functions. Recent advancements in neuroscience, such as brain-computer interfaces, have the potential to revolutionize areas like rehabilitation and neuroprosthetics."></div>
+            
+            <div class="neuron" style="top: 46%; left: 71.8%;" data-fact="Data Science is a multidisciplinary field that uses various scientific methods, processes, algorithms, and systems to extract insights and knowledge from data in various forms. It integrates techniques from mathematics, statistics, computer science, and domain-specific knowledge to analyze and interpret complex datasets. Data science drives innovation in industries such as marketing, where predictive analytics helps in targeting customers, and in healthcare, where it aids in personalized medicine."></div>
+            
+            <div class="neuron" style="top: 58.3%; left: 67.7%;" data-fact="Deep learning is a specialized subset of machine learning that employs neural networks with many layers (deep neural networks) to model and understand complex patterns in data. Deep learning algorithms are designed to mimic the functioning of the human brain, enabling machines to recognize patterns in unstructured data such as images, sound, and text. This technology underpins many of today's AI advancements, including natural language processing, autonomous systems, and sophisticated recommendation engines."></div>
+            
+            <div class="neuron" style="top: 52%; left: 60%;" data-fact="The human brain is an incredibly complex organ composed of approximately 86 billion neurons, each capable of forming thousands of connections with other neurons through synapses. These connections form intricate neural networks that are the basis for all thought processes, sensory perceptions, emotions, and motor actions. Understanding these networks is crucial for developing advanced AI systems that can replicate human-like cognition and problem-solving abilities."></div>
+            
+            <div class="neuron" style="top: 62.3%; left: 72.5%;" data-fact="Artificial Neural Networks (ANNs) are computing systems inspired by the biological neural networks found in human brains. They consist of interconnected groups of artificial neurons that process information in layers, with each layer learning to transform input data into more abstract and useful representations. ANNs are the foundation of many deep learning models and are used in applications such as image recognition, natural language processing, and even in playing complex games like Go and Chess."></div>
+            
+            <div class="neuron" style="top: 43.6%; left: 53.2%;" data-fact="Neurons communicate through electrical impulses and chemical signals across synapses. This process, known as synaptic transmission, is essential for all brain functions, including learning and memory. In computational neuroscience, these processes are modeled to develop more accurate and efficient artificial neural networks that can simulate cognitive functions and learn from vast amounts of data."></div>
+            
+            <div class="neuron" style="top: 60%; left: 55.3%;" data-fact="Reinforcement Learning is a type of machine learning where an agent learns to make decisions by taking actions in an environment to maximize cumulative rewards. It is inspired by behavioral psychology and is used in various applications, such as robotics, game playing, and autonomous vehicles, where the system learns optimal behavior through trial and error. Reinforcement learning has been instrumental in creating AI systems that can outperform humans in complex games like Go and StarCraft."></div>
+            
+            <div class="neuron" style="top: 39.5%; left: 47.7%;" data-fact="Neural Networks are computational models designed to simulate the way biological neurons process information in the brain. They consist of layers of nodes, where each node is modeled after a neuron that receives input, processes it, and passes it on to other neurons. The strength of these connections, known as weights, is adjusted through learning processes, enabling the network to solve complex tasks like image and speech recognition, and predictive modeling."></div>
+            
+            <div class="neuron" style="top: 76.8%; left: 63.8%;" data-fact="Data scientists utilize programming languages like Python and R, along with libraries such as TensorFlow, PyTorch, and Scikit-learn, to perform data analysis, machine learning, and deep learning tasks. Their work involves cleaning, organizing, and analyzing large datasets to uncover patterns and make predictions. In industry, data science is a crucial part of decision-making processes, helping companies optimize operations, understand customer behavior, and develop new products."></div>
+        </div>
+        <div id="tooltip"></div>
+        <script src="script.js"></script>
+
+        <div class="prompt-box">
+            <h3>Prompt Used:</h3>
+            <textarea readonly rows="10" cols="50">In HTML and CSS, make a brain, with interactive hovers of the bright neurons, and when hovered over each neuron, a textbox appears that gives a quick fact about machine learning or data science or neuroscience. 
+
+Create more facts, and calibrate the bright spots better with the bright spots already on the picture. (Had to personally calibrate location of bright spots)
+
+With updated coordinates, give more in depth and longer facts ranging from computer science, data science, machine learning, deep learning, neural networks
+
+Create a text box in the new page (ChatGPT can do this for you) that contains the prompt you used in the final version of your AI-generated page.
+
+            </textarea>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const neurons = document.querySelectorAll('.neuron');
+            const tooltip = document.getElementById('tooltip');
+
+            neurons.forEach(neuron => {
+                neuron.addEventListener('mouseover', function(event) {
+                    const fact = event.target.getAttribute('data-fact');
+                    tooltip.textContent = fact;
+                    tooltip.style.display = 'block';
+                    tooltip.style.left = `${event.pageX + 10}px`;
+                    tooltip.style.top = `${event.pageY + 10}px`;
+                });
+
+                neuron.addEventListener('mouseout', function() {
+                    tooltip.style.display = 'none';
+                });
+
+                neuron.addEventListener('mousemove', function(event) {
+                    tooltip.style.left = `${event.pageX + 10}px`;
+                    tooltip.style.top = `${event.pageY + 10}px`;
+                });
+            });
+        });
+    </script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
